@@ -55,6 +55,8 @@ SQL Injection vulnerabilities were found, allowing attackers to interfere with t
 **Evidence:**
 
   * [cite\_start]Successful UNION-based SQL injection queries were observed, demonstrating the ability to retrieve database information[cite: 1, 3].
+    ![Uploading Screenshot_2025-06-05_01_16_50.png…]()
+
 
   * [cite\_start]Error-based SQL injection techniques were also identified, revealing database structure and error messages that could be exploited[cite: 1, 3].
 
