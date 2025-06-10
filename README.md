@@ -54,11 +54,9 @@ SQL Injection vulnerabilities were found, allowing attackers to interfere with t
 
 **Evidence:**
 
-  * [cite\_start]Successful UNION-based SQL injection queries were observed, demonstrating the ability to retrieve database information[cite: 1, 3].
-    ![Uploading Screenshot_2025-06-05_01_16_50.png…]()
-
-
-  * [cite\_start]Error-based SQL injection techniques were also identified, revealing database structure and error messages that could be exploited[cite: 1, 3].
+  * Successful UNION-based SQL injection queries were observed, demonstrating the ability to retrieve database information
+   
+  * Error-based SQL injection techniques were also identified, revealing database structure and error messages that could be exploited
 
 ### Cross-Site Scripting (XSS)
 
@@ -72,7 +70,7 @@ Reflected XSS occurs when a malicious script is reflected off of a web applicati
 
 **Evidence:**
 
-  * [cite\_start]Successful injection of `<script>alert('XSS')</script>` payloads into input fields resulted in immediate pop-up dialogs on the victim's browser, confirming the reflected XSS vulnerability[cite: 4, 5, 6].
+  * Successful injection of `<script>alert('XSS')</script>` payloads into input fields resulted in immediate pop-up dialogs on the victim's browser, confirming the reflected XSS vulnerability
   * Observation of XSS payloads being directly reflected in the HTTP responses from the server and executed in the browser.
 
 #### DOM-Based XSS
@@ -83,7 +81,7 @@ DOM-based XSS (Document Object Model) is an XSS attack wherein the attack payloa
 **Evidence:**
 
   * (Provide specific examples or screenshots if you have them that show JavaScript manipulation of the DOM leading to XSS. For instance, if an input value is directly written to an element's `innerHTML` without sanitization, and you could demonstrate it with a payload that modifies the page.)
-  * [cite\_start]The DVWA's DOM-based XSS challenge specifically demonstrates this vulnerability, where client-side scripts process user input unsafely, leading to script execution[cite: 7].
+  * The DVWA's DOM-based XSS challenge specifically demonstrates this vulnerability, where client-side scripts process user input unsafely, leading to script execution
 
 #### Blind XSS
 
@@ -102,7 +100,8 @@ The application was found to be vulnerable to Command Injection, allowing an att
 
 **Evidence:**
 
-  * Successful execution of system commands (e.g., `ping` commands) through input fields, indicating that the application was directly passing user input to system calls without proper sanitization [cite: 7, 8,].
+  * Successful execution of system commands (e.g., `ping` commands) through input fields, indicating that the application was directly passing user input to system calls without proper sanitization
+
 
 ### Authentication Flaws
 
